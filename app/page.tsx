@@ -66,7 +66,7 @@ export default function Home() {
           </h1>
           <p className="mb-8 max-w-[600px] text-lg text-gray-200 sm:text-xl">
             Discover a wide selection of premium vehicles. From local to imported,
-            we have the perfect car waiting for you.
+            we have the perfect car waiting for you to drive.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button size="lg" asChild>
