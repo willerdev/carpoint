@@ -20,7 +20,7 @@ export default function ContactPage() {
           <div className="mb-8 space-y-4">
             <p className="text-lg text-muted-foreground">
               Have questions about our vehicles or import services? Get in touch
-              with our team, and we'll be happy to help.
+              with our team, and we&apos;ll be happy to help.
             </p>
           </div>
 
@@ -29,12 +29,12 @@ export default function ContactPage() {
               {
                 icon: MapPin,
                 title: "Visit Us",
-                description: "123 Car Street, Automotive City, AC 12345",
+                description: "Kigali Office and korea office in town",
               },
               {
                 icon: Phone,
                 title: "Call Us",
-                description: "+1 (234) 567-8900",
+                description: "+250 788 681 xxx",
               },
               {
                 icon: Mail,
@@ -59,7 +59,7 @@ export default function ContactPage() {
           <CardHeader>
             <CardTitle>Send us a message</CardTitle>
             <CardDescription>
-              Fill out the form below and we'll get back to you as soon as
+              Fill out the form below and we&apos;ll get back to you as soon as
               possible.
             </CardDescription>
           </CardHeader>

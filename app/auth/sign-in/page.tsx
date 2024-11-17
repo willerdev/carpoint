@@ -88,7 +88,7 @@ export default function SignInPage() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="john@example.com" {...field} />
+                    <Input placeholder="johnDoe@gmail.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -114,7 +114,7 @@ export default function SignInPage() {
         </Form>
 
         <p className="px-8 text-center text-sm text-muted-foreground">
-          Don't have an account?{" "}
+          Dont have an account?{" "}
           <Link
             href="/auth/sign-up"
             className="underline underline-offset-4 hover:text-primary"
