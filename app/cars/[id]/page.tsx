@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Car } from '@/lib/types';
@@ -32,11 +32,7 @@ export default function CarDetailsPage({ params }: { params: { id: string } }) {
   const [similarCars, setSimilarCars] = useState<Car[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    fetchCarDetails();
-  }, [params.id]);
-
-  async function fetchCarDetails() {
+  const fetchCarDetails = useCallback(async () => {
     try {
       const { data, error } = await supabase
         .from('cars')
@@ -78,15 +74,20 @@ export default function CarDetailsPage({ params }: { params: { id: string } }) {
         }
       }
     } catch (error) {
+      console.error('Error fetching car details:', error);
       toast({
         title: 'Error',
-        description: 'Failed to fetch car details',
+        description: 'Failed to load car details',
         variant: 'destructive',
       });
     } finally {
       setIsLoading(false);
     }
-  }
+  }, [params.id]);
+
+  useEffect(() => {
+    fetchCarDetails();
+  }, [fetchCarDetails]);
 
   if (isLoading) {
     return <div className="container py-8">Loading...</div>;

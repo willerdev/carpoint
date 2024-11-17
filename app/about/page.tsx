@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect, useCallback } from "react";
 
 export default function AboutPage() {
   return (
@@ -54,7 +55,7 @@ export default function AboutPage() {
             <div className="rounded-lg bg-background p-6 shadow-sm">
               <h3 className="mb-4 text-xl font-semibold">Customer First</h3>
               <p className="text-muted-foreground">
-                We prioritize our customers' needs and preferences, providing personalized service and support throughout their journey.
+                We prioritize our customers&apos; needs and preferences, providing personalized service and support throughout their journey.
               </p>
             </div>
             <div className="rounded-lg bg-background p-6 shadow-sm">
@@ -80,7 +81,7 @@ export default function AboutPage() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold">John Smith</h3>
+            <h3 className="text-xl font-semibold">Em</h3>
             <p className="text-muted-foreground">CEO & Founder</p>
           </div>
           <div className="text-center">
