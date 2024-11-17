@@ -108,7 +108,7 @@ export default function SignInPage() {
               )}
             />
             <Button className="w-full" type="submit" disabled={isLoading}>
-              {isLoading ? "Signing in..." : "Sign in"}
+              {isLoading ? "Signing in....." : "Sign in"}
             </Button>
           </form>
         </Form>
